@@ -16,6 +16,9 @@ RewriteRule ^image/(.*)$ assets/img/$1 [QSA,NC,L]
 
 # Rewrite 1 - For request via www.student.bth.se
 RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
+RewriteRule ^image/(.*\.svg)$ /~egrstud/dbwebb-kurser/design/me/portfolio/assets/img/$1 [QSA,NC,L]
+
+RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
 RewriteRule ^image/(.*)$ /~egrstud/dbwebb-kurser/design/me/portfolio/assets/cimage/img.php?src=$1 [QSA,NC,L]
 
 RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
