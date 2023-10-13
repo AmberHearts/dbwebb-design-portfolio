@@ -3,9 +3,11 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Welcome!
 ==========================
 
-The source for this page is in `content/index.md`.
+Online I go by the colour <span style="color: #ad6b00;">Amber</span>, nice to meet you!
+I'm a software/game dev that falls into all kinds of rabbit holes, including things like coding and design.
+Call me a jack of all trades!
 
-This is a sample home page written in markdown with some frontmatter defined.
+![Picture of an orange sheep emoji](image/sheep_simple.svg)
