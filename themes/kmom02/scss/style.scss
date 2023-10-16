@@ -24,3 +24,61 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Glass Antiqua', 'serif';
 }
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.parallax-container {
+    position: absolute;
+    z-index: -10;
+    transform-style: preserve-3d;
+    div:nth-child(1) {
+        background-color: $green-mid;
+        width: 300px;
+        height: 300px;
+        transform: translate3d(calc(30vw - 50% - 150vw * 0.3), 50vh, -15px) scale(2,2);
+    }
+
+    div:nth-child(2) {
+        background-color: $flavescent;
+        width: 300px;
+        height: 300px;
+        transform: translate3d(calc(70vw - 50% + 150vw * 0.3), 1600px, -10px) scale(2,2);
+    }
+}
+
+.header {
+    background-color: $brown;
+    height: 50vh;
+    min-height: 300px;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+    }
+    > div {
+        background-color: aquamarine;
+        &:nth-of-type(2n) {
+            background-color: red;
+            text-align: right;
+            h1 {
+                margin-left: auto;
+            }
+        }
+        > div {
+            &:nth-of-type(1) {
+                background-color: yellow;
+            }
+        }
+    }
+}

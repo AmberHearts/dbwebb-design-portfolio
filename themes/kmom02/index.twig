@@ -1,13 +1,28 @@
 {% include 'incl/header.twig' %}
 
 <body>
-    {% include 'incl/nav.twig' %}
+    <div class="wrapper">
+        <div class="parallax-container">
+            <div></div>
+            <div></div>
+        </div>
 
-    <div class="main" role="main">
-        {{ content }}
+        {% include 'incl/nav.twig' %}
+
+        <div class="main" role="main">
+            {% for block in content|split('<h1>') if block|trim|length %}
+                {% set parts = block|split('</h1>') %}
+            <div>
+                <div header>
+                    <h1>{{parts[0]|raw}}</h1>
+                </div>
+                <div content>{{parts[1]|raw}}</div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% include 'incl/footer.twig' %}
     </div>
-    
-    {% include 'incl/footer.twig' %}
 </body>
 
 </html>

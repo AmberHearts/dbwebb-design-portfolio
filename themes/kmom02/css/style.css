@@ -6458,14 +6458,73 @@ pre code {
 }
 
 body {
-  background-color: #3d5a80;
+  background-color: #d4df70;
 }
 
 * {
-  color: #000;
+  color: #406c56;
   font-family: "Didact Gothic", "sans-serif";
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Glass Antiqua", "serif";
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+.parallax-container {
+  position: absolute;
+  z-index: -10;
+  transform-style: preserve-3d;
+}
+.parallax-container div:nth-child(1) {
+  background-color: #afd96d;
+  width: 300px;
+  height: 300px;
+  transform: translate3d(calc(30vw - 50% - 45vw), 50vh, -15px) scale(2, 2);
+}
+.parallax-container div:nth-child(2) {
+  background-color: #ffeb8e;
+  width: 300px;
+  height: 300px;
+  transform: translate3d(calc(70vw - 50% + 45vw), 1600px, -10px) scale(2, 2);
+}
+
+.header {
+  background-color: #6b312d;
+  height: 50vh;
+  min-height: 300px;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1024px;
+  }
+}
+.main > div {
+  background-color: aquamarine;
+}
+.main > div:nth-of-type(2n) {
+  background-color: red;
+  text-align: right;
+}
+.main > div:nth-of-type(2n) h1 {
+  margin-left: auto;
+}
+.main > div > div:nth-of-type(1) {
+  background-color: yellow;
 }
