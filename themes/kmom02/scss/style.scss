@@ -26,7 +26,7 @@ html {
     line-height: 27px;
 }
 
-.fab {
+.fab, .fas {
     color: $orange-mid;
 }
 
@@ -45,6 +45,11 @@ h1 {
     line-height: 4.5rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
+
+    @media screen and (max-width:480px) {
+        font-size: 2.3888889rem;
+        line-height: 3rem;
+    }
 }
 
 h2 {
@@ -52,27 +57,24 @@ h2 {
     line-height: 3rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+
+    @media screen and (max-width:480px) {
+        font-size: 1.7777778rem;
+    }
 }
 
 h3 {
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
-h4 {
+h4 h5 {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: 0rem;
-}
-
-h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 p,
@@ -81,7 +83,7 @@ ol,
 pre,
 table,
 blockquote {
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 1.5rem;
 }
 
@@ -89,8 +91,8 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Let's make sure all's aligned */
@@ -144,7 +146,7 @@ sub {
         background-color: $green-mid;
         width: 800px;
         height: 800px;
-        transform: translate3d(-60vw,0,-20px);
+        transform: translate3d(-60vw, 0, -20px);
         // transform: translate3d(calc(30vw - 50% - 150vw * 0.3), 30vh, -15px) scale(2, 2);
     }
 
@@ -155,7 +157,7 @@ sub {
         height: 400px;
         bottom: 0;
         right: 0;
-        transform: translate3d(20vw,0,-7px);
+        transform: translate3d(20vw, 0, -7px);
         // transform: translate3d(calc(70vw - 50% + 150vw * 0.3), 0, -10px) scale(2, 2);
     }
 }
@@ -176,7 +178,7 @@ sub {
 .header-container {
     position: relative;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 20px 0;
 
     @media (min-width: 768px) {
         max-width: 768px;
@@ -194,11 +196,13 @@ sub {
 }
 
 .logo {
-    padding: 0px 0px;
+    padding: 0;
 }
 
 .nav {
+    @media (min-width: 768px) {
     transform: translateX(50%);
+    }
 
     a {
         color: $orange-mid;
@@ -214,7 +218,7 @@ sub {
     }
 
     li {
-        margin: 0px 10px;
+        margin: 0 10px;
     }
 }
 
@@ -232,37 +236,40 @@ sub {
 }
 
 section {
-    h1 {
-        width: 60%;
-    }
-
-    &:nth-of-type(2n) {
-        // background-color: red;
-        text-align: left;
-
+    margin: 0 8px;
+    @media (min-width: 768px) {
         h1 {
-            margin-right: auto;
+            width: 60%;
         }
 
-        .flex-text {
-            flex-direction: row;
-        }
-    }
+        &:nth-of-type(2n) {
+            // background-color: red;
+            text-align: left;
 
-    &:nth-of-type(2n - 1) {
-        // background-color: lightblue;
-        text-align: right;
+            h1 {
+                margin-right: auto;
+            }
 
-        h1 {
-            margin-left: auto;
-        }
-
-        .flex-text {
-            flex-direction: row-reverse;
+            .flex-text {
+                flex-direction: row;
+            }
         }
 
-        ul {
-            direction: rtl;
+        &:nth-of-type(2n - 1) {
+            // background-color: lightblue;
+            text-align: right;
+
+            h1 {
+                margin-left: auto;
+            }
+
+            .flex-text {
+                flex-direction: row-reverse;
+            }
+
+            ul {
+                direction: rtl;
+            }
         }
     }
 }
@@ -271,10 +278,17 @@ section {
 .flex-text {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+    }
+
     gap: 4em;
+
     p {
         max-width: 60ch;
     }
+
     div:nth-of-type(2) {
         flex-grow: 1;
         text-align: center;
@@ -297,4 +311,10 @@ section {
     height: 1.5rem;
     padding: 2px 12px;
     margin-top: auto;
+
+    @media screen and (max-width:480px) {
+        span {
+            display: none;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 ---
 Title: About
 Description: About the techniques used
+Logo: fas fa-info-circle
 ---
 
 # To serif or not to serif, that's the question

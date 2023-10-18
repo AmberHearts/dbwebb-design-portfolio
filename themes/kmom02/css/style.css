@@ -6471,7 +6471,7 @@ html {
   line-height: 27px;
 }
 
-.fab {
+.fab, .fas {
   color: #f6b149;
 }
 
@@ -6491,6 +6491,12 @@ h1 {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.3888889rem;
+    line-height: 3rem;
+  }
+}
 
 h2 {
   font-size: 2.2777778rem;
@@ -6498,26 +6504,24 @@ h2 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.7777778rem;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
-h4 {
+h4 h5 {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: 0rem;
-}
-
-h5 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 p,
@@ -6526,7 +6530,7 @@ ol,
 pre,
 table,
 blockquote {
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
@@ -6534,8 +6538,8 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Let's make sure all's aligned */
@@ -6617,7 +6621,7 @@ sub {
 .header-container {
   position: relative;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6636,11 +6640,13 @@ sub {
 }
 
 .logo {
-  padding: 0px 0px;
+  padding: 0;
 }
 
-.nav {
-  transform: translateX(50%);
+@media (min-width: 768px) {
+  .nav {
+    transform: translateX(50%);
+  }
 }
 .nav a {
   color: #f6b149;
@@ -6653,7 +6659,7 @@ sub {
   margin: 0;
 }
 .nav li {
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .main {
@@ -6671,35 +6677,45 @@ sub {
   }
 }
 
-section h1 {
-  width: 60%;
+section {
+  margin: 0 8px;
 }
-section:nth-of-type(2n) {
-  text-align: left;
-}
-section:nth-of-type(2n) h1 {
-  margin-right: auto;
-}
-section:nth-of-type(2n) .flex-text {
-  flex-direction: row;
-}
-section:nth-of-type(2n - 1) {
-  text-align: right;
-}
-section:nth-of-type(2n - 1) h1 {
-  margin-left: auto;
-}
-section:nth-of-type(2n - 1) .flex-text {
-  flex-direction: row-reverse;
-}
-section:nth-of-type(2n - 1) ul {
-  direction: rtl;
+@media (min-width: 768px) {
+  section h1 {
+    width: 60%;
+  }
+  section:nth-of-type(2n) {
+    text-align: left;
+  }
+  section:nth-of-type(2n) h1 {
+    margin-right: auto;
+  }
+  section:nth-of-type(2n) .flex-text {
+    flex-direction: row;
+  }
+  section:nth-of-type(2n - 1) {
+    text-align: right;
+  }
+  section:nth-of-type(2n - 1) h1 {
+    margin-left: auto;
+  }
+  section:nth-of-type(2n - 1) .flex-text {
+    flex-direction: row-reverse;
+  }
+  section:nth-of-type(2n - 1) ul {
+    direction: rtl;
+  }
 }
 
 .flex-text {
   display: flex;
   justify-content: space-between;
   gap: 4em;
+}
+@media screen and (max-width: 480px) {
+  .flex-text {
+    flex-direction: column;
+  }
 }
 .flex-text p {
   max-width: 60ch;
@@ -6724,4 +6740,9 @@ section:nth-of-type(2n - 1) ul {
   height: 1.5rem;
   padding: 2px 12px;
   margin-top: auto;
+}
+@media screen and (max-width: 480px) {
+  .footer span {
+    display: none;
+  }
 }

@@ -1,7 +1,7 @@
 ---
 Logo: image/arts_logo.svg
 Tagline: My portfolio.
-Footer: v1.0.2 - "*Design is my passion*", now served with .svg!
+Footer: v2.0.0 - This page is starting to look real cool now!
 Social:
     - title: Link to the page's github repository.
       url: https://github.com/AmberHearts/dbwebb-design-portfolio
