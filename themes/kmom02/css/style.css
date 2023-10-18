@@ -6457,17 +6457,116 @@ pre code {
   line-height: 1.4;
 }
 
-body {
-  background-color: #d4df70;
-}
-
-* {
-  color: #406c56;
-  font-family: "Didact Gothic", "sans-serif";
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Glass Antiqua", "serif";
+}
+
+html {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.fab {
+  color: #f6b149;
+}
+
+body {
+  font-family: "Didact Gothic", sans-serif;
+  color: #406c56;
+  background-color: #d4df70;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3.3888889rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2.2777778rem;
+  line-height: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
 }
 
 .wrapper {
@@ -6475,30 +6574,86 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .parallax-container {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -10;
   transform-style: preserve-3d;
 }
 .parallax-container div:nth-child(1) {
   background-color: #afd96d;
-  width: 300px;
-  height: 300px;
-  transform: translate3d(calc(30vw - 50% - 45vw), 50vh, -15px) scale(2, 2);
+  width: 800px;
+  height: 800px;
+  transform: translate3d(-60vw, 0, -20px);
 }
 .parallax-container div:nth-child(2) {
+  position: absolute;
   background-color: #ffeb8e;
-  width: 300px;
-  height: 300px;
-  transform: translate3d(calc(70vw - 50% + 45vw), 1600px, -10px) scale(2, 2);
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  right: 0;
+  transform: translate3d(20vw, 0, -7px);
 }
 
 .header {
-  background-color: #6b312d;
   height: 50vh;
-  min-height: 300px;
+  min-height: 16rem;
+  max-height: 26rem;
+  flex-shrink: 0;
+}
+
+.header-backdrop {
+  background-color: #6b312d;
+  background-image: url("../../../image/wood_texture_brown.jpg");
+  background-size: cover;
+}
+
+.header-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-container {
+    max-width: 1024px;
+  }
+}
+
+.logo {
+  padding: 0px 0px;
+}
+
+.nav {
+  transform: translateX(50%);
+}
+.nav a {
+  color: #f6b149;
+}
+.nav ul li {
+  display: inline;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  margin: 0px 10px;
 }
 
 .main {
@@ -6515,16 +6670,58 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1024px;
   }
 }
-.main > div {
-  background-color: aquamarine;
+
+section h1 {
+  width: 60%;
 }
-.main > div:nth-of-type(2n) {
-  background-color: red;
+section:nth-of-type(2n) {
+  text-align: left;
+}
+section:nth-of-type(2n) h1 {
+  margin-right: auto;
+}
+section:nth-of-type(2n) .flex-text {
+  flex-direction: row;
+}
+section:nth-of-type(2n - 1) {
   text-align: right;
 }
-.main > div:nth-of-type(2n) h1 {
+section:nth-of-type(2n - 1) h1 {
   margin-left: auto;
 }
-.main > div > div:nth-of-type(1) {
-  background-color: yellow;
+section:nth-of-type(2n - 1) .flex-text {
+  flex-direction: row-reverse;
+}
+section:nth-of-type(2n - 1) ul {
+  direction: rtl;
+}
+
+.flex-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+}
+.flex-text p {
+  max-width: 60ch;
+}
+.flex-text div:nth-of-type(2) {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.transition {
+  height: 12rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f6b149;
+  background-color: #6b312d;
+  background-image: url("../../../image/wood_texture_brown.jpg");
+  background-size: cover;
+  height: 1.5rem;
+  padding: 2px 12px;
+  margin-top: auto;
 }

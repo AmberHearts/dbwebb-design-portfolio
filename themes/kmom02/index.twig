@@ -12,15 +12,20 @@
         <div class="main" role="main">
             {% for block in content|split('<h1>') if block|trim|length %}
                 {% set parts = block|split('</h1>') %}
-            <div>
-                <div header>
-                    <h1>{{parts[0]|raw}}</h1>
+            <section>
+                <h1>{{parts[0]|raw}}</h1>
+                <div class="flex-text">
+                    {# {{parts[1]|raw}} #}
+                    {% for block2 in parts[1]|split('<hr />') if block2|trim|length %}
+                        <div>{{block2|raw}}</div>
+                    {% endfor %}
                 </div>
-                <div content>{{parts[1]|raw}}</div>
-            </div>
+            </section>
+            <div class="transition"></div>
             {% endfor %}
         </div>
-        
+        <div class="diamond-backdrop"></div>
+
         {% include 'incl/footer.twig' %}
     </div>
 </body>

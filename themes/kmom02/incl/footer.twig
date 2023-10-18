@@ -1,8 +1,9 @@
 <div class="footer">
     <div>
-        <p>
-            {{ pages["_meta"].meta.footer|markdown }}
-        </p>
+        {# Todo: for some reason this produces extra paragraphs around it #}
+        <span>
+            {{ pages["_meta"].meta.footer|markdown(singleLine=true) }}
+        </span>
     </div>
     <div class="social">
         <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
