@@ -4,6 +4,16 @@ Description: About the techniques used
 Logo: fas fa-info-circle
 ---
 
+# Welcome
+
+Online I go by the colour <span style="color: #ad6b00;">Amber</span>, nice to meet you!
+I'm a software/game dev that falls into all kinds of rabbit holes, including creative outlets such as art and design.
+Call me a jack of all trades!
+
+---
+
+![Picture of an orange sheep emoji](image/sheep_simple.svg)
+
 # To serif or not to serif, that's the question
 
 This site uses a total of <span style="color: #ad6b00;">three</span> main fonts

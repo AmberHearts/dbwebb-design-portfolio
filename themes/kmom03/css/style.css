@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Glass+Antiqua|Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Glass+Antiqua|Didact+Gothic|Courier+Prime&display=swap");
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6455,6 +6455,61 @@ pre code {
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+.landingpage {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4.5rem 1rem;
+}
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+.landingpage .box {
+  border-style: solid;
+  border-color: #406c56;
+  border-width: 3px;
+}
+.landingpage .box:hover {
+  transform: scale(105%);
+}
+.landingpage .box p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.landingpage .box h1,
+.landingpage .box h2 {
+  margin: 0;
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+.landingpage .box .box-fill {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.landingpage .box .box-fill:nth-of-type(1) {
+  background-color: #406c56;
+  color: #ffeb8e;
+  text-align: center;
+}
+.landingpage .box .box-fill:nth-of-type(2) {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #ffeb8e;
+}
+.landingpage .box:nth-of-type(5n + 1), .landingpage .box:nth-of-type(5n + 4) {
+  grid-column: span 1;
+}
+.landingpage .box:nth-of-type(5n + 2), .landingpage .box:nth-of-type(5n + 3) {
+  grid-column: span 2;
+}
+.landingpage .box:nth-of-type(5n) {
+  grid-column: span 3;
 }
 
 h1,

@@ -8,9 +8,9 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
-    "watch": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map -w",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
+    "style": "sass $THEME/scss/style.scss $THEME/css/style.css --no-source-map",
+    "watch": "sass $THEME/scss/style.scss $THEME/css/style.css --no-source-map -w",
+    "style-min": "sass $THEME/scss/style.scss $THEME/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
