@@ -10,9 +10,45 @@
         {% include 'incl/nav.twig' %}
 
         <div class="main" role="main">
-            <div class="landingpage">
+            {% if current_page.id == "index" %}
+            <div style="text-align: center;">
                 {{ content }}
             </div>
+            <div class="landingpage">
+
+                {% for page in pages("technologies") %}
+                <a href="{{ page.url }}">
+                    <div class="box">
+                        <div class="box-fill">
+                            <h2>{{ page.title }}</h2>
+                        </div>
+                        <div class="box-fill">
+                            <p>{{ page.description }}</p>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="wiki">
+                <aside class="wiki-aside">
+                    <ul>
+                        {% for page in pages("technologies") %}
+                        <li>
+                            <a href="{{ page.url }}">
+                                {{ page.title }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+                <section class="wiki-section">
+                    <div>
+                        {{ content }}
+                    </div>
+                </section>
+            </div>
+            {% endif %}
         </div>
         <div class="diamond-backdrop"></div>
 

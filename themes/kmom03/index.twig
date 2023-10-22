@@ -12,7 +12,7 @@
         <div class="main" role="main">
             {% for block in content|split('<h1>') if block|trim|length %}
                 {% set parts = block|split('</h1>') %}
-            <section>
+            <section class="single-page-section">
                 <h1>{{parts[0]|raw}}</h1>
                 <div class="flex-text">
                     {# {{parts[1]|raw}} #}

@@ -6459,57 +6459,99 @@ pre code {
 
 .landingpage {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 100%;
   gap: 4.5rem 1rem;
+  margin: 0 1rem 4.5rem;
 }
-.landingpage h1 {
-  grid-column: span 3;
-  justify-self: center;
+@media (min-width: 768px) {
+  .landingpage {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
-.landingpage .box {
-  border-style: solid;
-  border-color: #406c56;
-  border-width: 3px;
+.landingpage a {
+  all: unset;
+  cursor: pointer;
+  grid-column: span 1;
 }
-.landingpage .box:hover {
+@media (min-width: 768px) {
+  .landingpage a:nth-of-type(5n + 1), .landingpage a:nth-of-type(5n + 4) {
+    grid-column: span 1;
+  }
+  .landingpage a:nth-of-type(5n + 2), .landingpage a:nth-of-type(5n + 3) {
+    grid-column: span 2;
+  }
+  .landingpage a:nth-of-type(5n) {
+    grid-column: span 3;
+  }
+}
+
+.box {
+  border-radius: 10px 10px 0 0;
+}
+.box:hover {
   transform: scale(105%);
 }
-.landingpage .box p {
+.box p {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.landingpage .box h1,
-.landingpage .box h2 {
+.box h1,
+.box h2 {
   margin: 0;
   font-family: "Courier Prime", "Courier New", Courier, monospace;
   font-style: italic;
   font-weight: 400;
 }
-.landingpage .box .box-fill {
+
+.box-fill {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.landingpage .box .box-fill:nth-of-type(1) {
+.box-fill:nth-of-type(1) {
   background-color: #406c56;
   color: #ffeb8e;
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
-.landingpage .box .box-fill:nth-of-type(2) {
+.box-fill:nth-of-type(2) {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #ffeb8e;
+  border-style: solid;
+  border-color: #406c56;
+  border-width: 3px;
 }
-.landingpage .box:nth-of-type(5n + 1), .landingpage .box:nth-of-type(5n + 4) {
-  grid-column: span 1;
+
+.wiki {
+  display: flex;
+  flex-direction: row;
 }
-.landingpage .box:nth-of-type(5n + 2), .landingpage .box:nth-of-type(5n + 3) {
-  grid-column: span 2;
+
+.wiki-aside {
+  font-size: 2.2777778rem;
+  line-height: 3rem;
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
 }
-.landingpage .box:nth-of-type(5n) {
-  grid-column: span 3;
+@media (max-width: 768px) {
+  .wiki-aside {
+    display: none;
+  }
+}
+.wiki-aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+.wiki-section {
+  flex-grow: 1;
+}
+.wiki-section div {
+  margin: 0 auto;
+  width: 60ch;
 }
 
 h1,
@@ -6732,32 +6774,32 @@ sub {
   }
 }
 
-section {
+.single-page-section {
   margin: 0 8px;
 }
 @media (min-width: 768px) {
-  section h1 {
+  .single-page-section h1 {
     width: 60%;
   }
-  section:nth-of-type(2n) {
+  .single-page-section:nth-of-type(2n) {
     text-align: left;
   }
-  section:nth-of-type(2n) h1 {
+  .single-page-section:nth-of-type(2n) h1 {
     margin-right: auto;
   }
-  section:nth-of-type(2n) .flex-text {
+  .single-page-section:nth-of-type(2n) .flex-text {
     flex-direction: row;
   }
-  section:nth-of-type(2n - 1) {
+  .single-page-section:nth-of-type(2n - 1) {
     text-align: right;
   }
-  section:nth-of-type(2n - 1) h1 {
+  .single-page-section:nth-of-type(2n - 1) h1 {
     margin-left: auto;
   }
-  section:nth-of-type(2n - 1) .flex-text {
+  .single-page-section:nth-of-type(2n - 1) .flex-text {
     flex-direction: row-reverse;
   }
-  section:nth-of-type(2n - 1) ul {
+  .single-page-section:nth-of-type(2n - 1) ul {
     direction: rtl;
   }
 }
