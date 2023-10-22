@@ -10,13 +10,13 @@
         {% include 'incl/nav.twig' %}
 
         <div class="main" role="main">
-            {% if current_page.id == "index" %}
+            {% if current_page.id == "technology/index" %}
             <div style="text-align: center;">
                 {{ content }}
             </div>
             <div class="landingpage">
 
-                {% for page in pages("technologies") %}
+                {% for page in pages("technology") %}
                 <a href="{{ page.url }}">
                     <div class="box">
                         <div class="box-fill">
@@ -33,7 +33,7 @@
             <div class="wiki">
                 <aside class="wiki-aside">
                     <ul>
-                        {% for page in pages("technologies") %}
+                        {% for page in pages("technology") %}
                         <li>
                             <a href="{{ page.url }}">
                                 {{ page.title }}
