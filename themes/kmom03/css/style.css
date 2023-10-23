@@ -6492,7 +6492,7 @@ pre code {
   transform: scale(105%);
 }
 .box p {
-  margin: 0;
+  margin: 0 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6545,13 +6545,25 @@ pre code {
   padding: 0;
   margin: 0 2rem;
 }
+.wiki-aside a {
+  all: unset;
+  cursor: pointer;
+  color: #6b312d;
+}
+.wiki-aside .active {
+  color: #a22543;
+}
 
 .wiki-section {
   flex-grow: 1;
 }
 .wiki-section div {
   margin: 0 auto;
-  width: 60ch;
+  max-width: 60ch;
+}
+.wiki-section h1, .wiki-section p {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 h1,

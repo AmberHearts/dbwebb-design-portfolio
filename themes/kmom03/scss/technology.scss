@@ -41,7 +41,7 @@
     }
 
     p {
-        margin: 0;
+        margin: 0 5px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -98,6 +98,14 @@
         padding: 0;
         margin: 0 2rem;
     }
+    a {
+        all: unset;
+        cursor: pointer;
+        color: $brown;
+    }
+    .active {
+        color: $orange-dark;
+    }
 }
 
 .wiki-section {
@@ -105,6 +113,10 @@
     
     div {
         margin: 0 auto;
-        width: 60ch;
+        max-width: 60ch;
+    }
+    h1, p {
+         margin-left: 5px;
+         margin-right: 5px;
     }
 }
