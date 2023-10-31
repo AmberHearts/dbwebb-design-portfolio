@@ -6,7 +6,7 @@ Logo: fas fa-info-circle
 
 # To serif or not to serif, that's the question
 
-This site uses a total of <span style="color: #ad6b00;">three</span> main fonts
+This site uses a total of <span style="color: #f6b149;">three</span> main fonts
 
 * **PW Chalk** for the carved logo
 * **Glass Antiqua** for headers

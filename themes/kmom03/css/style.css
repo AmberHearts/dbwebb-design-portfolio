@@ -6847,6 +6847,10 @@ a {
   height: 12rem;
 }
 
+.emphasis {
+  color: #a22543;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

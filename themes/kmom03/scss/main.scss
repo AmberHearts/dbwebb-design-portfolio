@@ -281,6 +281,7 @@ a {
         }
 
     }
+    
     img {
         content: $sheep-img-url;
     }
@@ -310,6 +311,10 @@ a {
 .transition {
     // background-color: brown;
     height: 1.5rem * 8;
+}
+
+.emphasis {
+    color: $emphasis-color;
 }
 
 .footer {
