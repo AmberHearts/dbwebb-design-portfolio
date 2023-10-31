@@ -179,7 +179,7 @@ a {
 
 .header-backdrop {
     background-color: $brown;
-    // background-image: url('../../../image/wood_texture_brown.jpg');
+    background-image: $wood-texture-url;
     background-size: cover;
 }
 
@@ -281,7 +281,7 @@ a {
         }
 
     }
-    
+
     img {
         content: $sheep-img-url;
     }
@@ -323,7 +323,7 @@ a {
     align-items: center;
     color: $accent-color;
     background-color: $brown;
-    // background-image: url('../../../image/wood_texture_brown.jpg');
+    background-image: $wood-texture-url;
     background-size: cover;
     height: 1.5rem;
     padding: 2px 12px;

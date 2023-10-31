@@ -6730,6 +6730,7 @@ a {
 
 .header-backdrop {
   background-color: #2f0f18;
+  background-image: url("../../../image/wood_texture_dark.jpg");
   background-size: cover;
 }
 
@@ -6857,6 +6858,7 @@ a {
   align-items: center;
   color: #e1a769;
   background-color: #2f0f18;
+  background-image: url("../../../image/wood_texture_dark.jpg");
   background-size: cover;
   height: 1.5rem;
   padding: 2px 12px;
