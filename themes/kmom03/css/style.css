@@ -6511,7 +6511,7 @@ pre code {
   white-space: nowrap;
 }
 .box-fill:nth-of-type(1) {
-  background-color: #406c56;
+  background-color: #375344;
   color: #ffeb8e;
   text-align: center;
   border-radius: 10px 10px 0 0;
@@ -6521,7 +6521,7 @@ pre code {
   padding-bottom: 1.5rem;
   background-color: #ffeb8e;
   border-style: solid;
-  border-color: #406c56;
+  border-color: #375344;
   border-width: 3px;
 }
 
@@ -6586,7 +6586,7 @@ html {
 
 body {
   font-family: "Didact Gothic", sans-serif;
-  color: #406c56;
+  color: #375344;
   background-color: #d4df70;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -6682,6 +6682,13 @@ sub {
   bottom: -0.25em;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+  color: #a22543;
+  text-decoration: underline;
+}
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -6723,7 +6730,6 @@ sub {
 
 .header-backdrop {
   background-color: #6b312d;
-  background-image: url("../../../image/wood_texture_brown.jpg");
   background-size: cover;
 }
 
@@ -6815,6 +6821,9 @@ sub {
     direction: rtl;
   }
 }
+.single-page-section img {
+  content: url("../../../image/sheep_simple_light.svg");
+}
 
 .flex-text {
   display: flex;
@@ -6844,7 +6853,6 @@ sub {
   align-items: center;
   color: #f6b149;
   background-color: #6b312d;
-  background-image: url("../../../image/wood_texture_brown.jpg");
   background-size: cover;
   height: 1.5rem;
   padding: 2px 12px;
@@ -6855,3 +6863,5 @@ sub {
     display: none;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

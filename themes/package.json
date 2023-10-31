@@ -13,7 +13,8 @@
     "style-min": "sass $THEME/scss/style.scss $THEME/css/style.min.css --no-source-map --style compressed",
     "style-dark": "sass $THEME/scss/style-dark.scss $THEME/css/style-dark.css --no-source-map",
     "watch-dark": "sass $THEME/scss/style-dark.scss $THEME/css/style-dark.css --no-source-map -w",
-    "style-min-dark": "sass $THEME/scss/style-dark.scss $THEME/css/style-dark.min.css --no-source-map --style compressed"
+    "style-min-dark": "sass $THEME/scss/style-dark.scss $THEME/css/style-dark.min.css --no-source-map --style compressed",
+    "watch-all": "sass -w $THEME/scss/style.scss:$THEME/css/style.css $THEME/scss/style-dark.scss:$THEME/css/style-dark.css"
   },
   "keywords": [],
   "author": "",

@@ -6511,17 +6511,17 @@ pre code {
   white-space: nowrap;
 }
 .box-fill:nth-of-type(1) {
-  background-color: #406c56;
-  color: #ffeb8e;
+  background-color: #2f1e2e;
+  color: #34243d;
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
 .box-fill:nth-of-type(2) {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: #ffeb8e;
+  background-color: #34243d;
   border-style: solid;
-  border-color: #406c56;
+  border-color: #2f1e2e;
   border-width: 3px;
 }
 
@@ -6548,10 +6548,10 @@ pre code {
 .wiki-aside a {
   all: unset;
   cursor: pointer;
-  color: #6b312d;
+  color: #2f0f18;
 }
 .wiki-aside .active {
-  color: #a22543;
+  color: #522833;
 }
 
 .wiki-section {
@@ -6581,13 +6581,13 @@ html {
 }
 
 .fab, .fas {
-  color: #f6b149;
+  color: #e1a769;
 }
 
 body {
   font-family: "Didact Gothic", sans-serif;
-  color: #406c56;
-  background-color: #a22543;
+  color: #ffeb8e;
+  background-color: #363062;
   font-size: 1rem;
   line-height: 1.5rem;
   margin: auto;
@@ -6682,6 +6682,13 @@ sub {
   bottom: -0.25em;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+  color: #fda901;
+  text-decoration: underline;
+}
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -6699,14 +6706,14 @@ sub {
   transform-style: preserve-3d;
 }
 .parallax-container div:nth-child(1) {
-  background-color: #afd96d;
+  background-color: #38406c;
   width: 800px;
   height: 800px;
   transform: translate3d(-60vw, 0, -20px);
 }
 .parallax-container div:nth-child(2) {
   position: absolute;
-  background-color: #ffeb8e;
+  background-color: #34243d;
   width: 400px;
   height: 400px;
   bottom: 0;
@@ -6722,8 +6729,7 @@ sub {
 }
 
 .header-backdrop {
-  background-color: #6b312d;
-  background-image: url("../../../image/wood_texture_brown.jpg");
+  background-color: #2f0f18;
   background-size: cover;
 }
 
@@ -6758,7 +6764,7 @@ sub {
   }
 }
 .nav a {
-  color: #f6b149;
+  color: #e1a769;
 }
 .nav ul li {
   display: inline;
@@ -6815,6 +6821,9 @@ sub {
     direction: rtl;
   }
 }
+.single-page-section img {
+  content: url("../../../image/sheep_simple_dark.svg");
+}
 
 .flex-text {
   display: flex;
@@ -6842,9 +6851,8 @@ sub {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f6b149;
-  background-color: #6b312d;
-  background-image: url("../../../image/wood_texture_brown.jpg");
+  color: #e1a769;
+  background-color: #2f0f18;
   background-size: cover;
   height: 1.5rem;
   padding: 2px 12px;
@@ -6855,3 +6863,5 @@ sub {
     display: none;
   }
 }
+
+/*# sourceMappingURL=style-dark.css.map */

@@ -12,4 +12,4 @@ Call me a jack of all trades!
 
 ---
 
-![Picture of an orange sheep emoji](image/sheep_simple.svg)
+![Picture of an orange sheep emoji](image/sheep_simple_light.svg)

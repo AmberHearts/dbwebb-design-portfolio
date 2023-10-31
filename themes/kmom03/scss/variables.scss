@@ -1,15 +1,19 @@
-$green-light: #d4df70;
-$green-mid: #afd96d;
-$green-dark: #406c56;
-$orange-light: #fc6;
-$orange-mid: #f6b149;
-$orange-dark: #a22543;
-$brown: #6b312d;
-$flavescent: #ffeb8e;
+$green-light: #d4df70 !default;
+$green-mid: #afd96d !default;
+$green-dark: #375344 !default;
+$orange-light: #fc6 !default;
+$orange-mid: #f6b149 !default;
+$orange-dark: #a22543 !default;
+$brown: #6b312d !default;
+$flavescent: #ffeb8e !default;
 
-$font-color: $green-dark;
-$accent-color: $orange-dark;
-$background-color: $green-light;
+$font-color: #375344 !default;
+$accent-color: #f6b149 !default;
+$link-color: #a22543 !default;
+$background-color: #d4df70 !default;
+
+$logotype-url: url('../../../image/arts_logo.svg') !default;
+$sheep-img-url: url('../../../image/sheep_simple_light.svg') !default;
 
 $font-family-header: 'Glass Antiqua', 'serif';
 $font-family-text: 'Didact Gothic', sans-serif;

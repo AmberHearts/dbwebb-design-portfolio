@@ -17,7 +17,7 @@ body text gives distinction and looks very aesthetically pleasing
 
 ---
 
-![Sheep emoji number 1: Placeholder sheep, one of many](image/sheep_simple.svg)
+![Sheep emoji number 1: Placeholder sheep, one of many](image/sheep_simple_light.svg)
 
 
 # Playing with depth and parallax
@@ -29,7 +29,7 @@ The trick is to made is subtle enough so that it don't take away from the main a
 
 ---
 
-![Sheep emoji number 2: Sheep way to add content](image/sheep_simple.svg)
+![Sheep emoji number 2: Sheep way to add content](image/sheep_simple_light.svg)
 
 # Guiding the users eyes
 
@@ -40,7 +40,7 @@ The font sizes, line heights and margins have been gratefully calculated by the 
 
 ---
 
-![Sheep emoji number 3: You herd me!](image/sheep_simple.svg)
+![Sheep emoji number 3: You herd me!](image/sheep_simple_light.svg)
 
 # Colours of nature and the joy of autumn
 
@@ -52,4 +52,4 @@ Accessibility and colour contrasts are still a challenge and a work in progress!
 
 ---
 
-![Sheep emoji number 4: ](image/sheep_simple.svg)
+![Sheep emoji number 4: ](image/sheep_simple_light.svg)
