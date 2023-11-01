@@ -151,7 +151,7 @@ a {
     transform-style: preserve-3d;
 
     div:nth-child(1) {
-        background-color: $green-mid;
+        background-color: $primary-mid;
         width: 800px;
         height: 800px;
         transform: translate3d(-60vw, 0, -20px);
@@ -160,7 +160,7 @@ a {
 
     div:nth-child(2) {
         position: absolute;
-        background-color: $flavescent;
+        background-color: $special;
         width: 400px;
         height: 400px;
         bottom: 0;

@@ -27,7 +27,7 @@ html {
 }
 
 .fab, .fas {
-    color: $orange-mid;
+    color: $secondary-mid;
 }
 
 body {
@@ -143,7 +143,7 @@ sub {
     transform-style: preserve-3d;
 
     div:nth-child(1) {
-        background-color: $green-mid;
+        background-color: $primary-mid;
         width: 800px;
         height: 800px;
         transform: translate3d(-60vw, 0, -20px);
@@ -152,7 +152,7 @@ sub {
 
     div:nth-child(2) {
         position: absolute;
-        background-color: $flavescent;
+        background-color: $special;
         width: 400px;
         height: 400px;
         bottom: 0;
@@ -205,7 +205,7 @@ sub {
     }
 
     a {
-        color: $orange-mid;
+        color: $secondary-mid;
     }
 
     ul li {
@@ -304,7 +304,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $orange-mid;
+    color: $secondary-mid;
     background-color: $brown;
     background-image: url('../../../image/wood_texture_brown.jpg');
     background-size: cover;
