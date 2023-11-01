@@ -6426,15 +6426,15 @@ blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
+  border-left: 0.5em solid #2f1e2e;
 }
 
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
-  border: 1px solid #ccc;
+  border: 1px solid #2f1e2e;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: #38406c;
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
@@ -6442,9 +6442,9 @@ code {
 
 pre {
   padding: 0 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #2f1e2e;
   border-radius: 0.3em;
-  background: #f5f5f5;
+  background: #38406c;
 }
 
 pre code {
@@ -6512,7 +6512,7 @@ pre code {
 }
 .box-fill:nth-of-type(1) {
   background-color: #2f1e2e;
-  color: #34243d;
+  color: #e1a769;
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
@@ -6548,10 +6548,10 @@ pre code {
 .wiki-aside a {
   all: unset;
   cursor: pointer;
-  color: #2f0f18;
+  color: #ffeb8e;
 }
 .wiki-aside .active {
-  color: #522833;
+  color: #e1a769;
 }
 
 .wiki-section {

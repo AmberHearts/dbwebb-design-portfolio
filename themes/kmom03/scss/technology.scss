@@ -64,7 +64,7 @@
 
     &:nth-of-type(1) {
         background-color: $green-dark;
-        color: $flavescent;
+        color: $accent-color;
         text-align: center;
         border-radius: 10px 10px 0 0;
 
@@ -102,11 +102,11 @@
     a {
         all: unset;
         cursor: pointer;
-        color: $brown;
+        color: $font-color;
     }
 
     .active {
-        color: $orange-dark;
+        color: $accent-color;
     }
 }
 
