@@ -1,7 +1,7 @@
 ---
 Logo: image/arts_logo.svg
 Tagline: My portfolio.
-Footer: v4.0.1 - Feels a bit like Halloween
+Footer: v4.0.2 - Feels a bit like Halloween
 Social:
     - title: Link to the page's github repository.
       url: https://github.com/AmberHearts/dbwebb-design-portfolio

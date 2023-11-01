@@ -10,13 +10,13 @@
         {% include 'incl/nav.twig' %}
 
         <div class="main" role="main">
-            {% if current_page.id == "technology/index" %}
+            {% if current_page.id|split('/')|last == "index" %}
             <div style="text-align: center;">
                 {{ content }}
             </div>
             <div class="landingpage">
 
-                {% for page in pages("technology") %}
+                {% for page in pages(current_page.id|replace({'/index':''})) %}
                 <a href="{{ page.url }}">
                     <div class="box">
                         <div class="box-fill">
@@ -33,7 +33,7 @@
             <div class="wiki">
                 <aside class="wiki-aside">
                     <ul>
-                        {% for page in pages("technology") %}
+                        {% for page in pages(current_page.id|split('/')|slice(0,-1)|join('/')) %}
                         <li>
                             <a href="{{ page.url }}" {% if page.id==current_page.id %} class="active" {% endif %}>
                                 {{ page.title }}
