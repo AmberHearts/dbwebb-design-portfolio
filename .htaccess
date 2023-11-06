@@ -12,7 +12,11 @@ RewriteRule (.*) - [NC,L]
 # For now I've decided to just reroute and serve the image directory
 # if it's being served from localhost
 RewriteCond %{HTTP_HOST} ^localhost$ [NC]
-RewriteRule ^image/(.*)$ assets/img/$1 [QSA,NC,L]
+RewriteRule ^image/(.*\.svg)$ assets/img/$1 [QSA,NC,L]
+
+RewriteCond %{HTTP_HOST} ^localhost$ [NC]
+RewriteRule ^image/(.*)$ assets/cimage/img.php?src=$1 [QSA,NC,L]
+#RewriteRule ^image/(.*)$ assets/img/$1 [QSA,NC,L]
 
 # Rewrite 1 - For request via www.student.bth.se
 RewriteCond %{HTTP_HOST} ^www\.student\.bth\.se$ [NC]
