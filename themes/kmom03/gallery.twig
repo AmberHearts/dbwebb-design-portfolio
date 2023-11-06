@@ -30,6 +30,11 @@
                 </a>
                 {% endfor %}
             </div>
+            {% if meta['Youtube'] %}
+            <div class="embed-container">
+                <iframe src="{{meta['Youtube']}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% endif %}
         </div>
         <div class="diamond-backdrop"></div>
 
